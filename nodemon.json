@@ -1,7 +1,0 @@
-{
-    "env":{
-        "MONGO_USER":"dbAdmin",
-        "MONGO_PASSWORD":"Heisenberg",
-        "MONGO_DEFAULT_DATABASE":"shopping"
-    }
-}
