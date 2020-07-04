@@ -1,5 +1,5 @@
 # shopping-app
-shopping app using node and express
+## Shopping app using Node and Express
 
 ### Deployed using heroku
 URL-https://shopping-app-nodejs.herokuapp.com/
