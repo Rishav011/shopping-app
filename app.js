@@ -43,8 +43,11 @@ const fileFilter = (req,file,cb) => {
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
+// contains admin routes
 const adminRoutes = require('./routes/admin');
+// contains shop routes
 const shopRoutes = require('./routes/shop');
+// contains authentication routes
 const authRoutes = require('./routes/auth');
 
 const accessLogStream = fs.createWriteStream(
