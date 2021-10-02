@@ -10,12 +10,15 @@ const isAuth = require('../middleware/is-auth');
 const router = express.Router();
 
 // /admin/add-product => GET
+// 
 router.get('/add-product', isAuth, adminController.getAddProduct);
 
 // /admin/products => GET
+// Used for getting all products
 router.get('/products', isAuth, adminController.getProducts);
 
 // /admin/add-product => POST
+// Used for adding new product
 router.post('/add-product',[
     body('title').isString().isLength({min:5}).trim(),
     body('price').isFloat(),
