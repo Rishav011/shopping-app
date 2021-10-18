@@ -9,6 +9,7 @@ router.get('/login', authController.getLogin);
 
 router.get('/signup', authController.getSignup);
 
+// login user
 router.post('/login', [
     body('email')
       .isEmail().normalizeEmail()
@@ -18,6 +19,7 @@ router.post('/login', [
       .isAlphanumeric().trim()
   ], authController.postLogin);
 
+  // signup user
 router.post('/signup',
 [
     check('email')
